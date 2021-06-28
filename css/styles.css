@@ -1,7 +1,7 @@
 .intro {
     background-image:url(../images/pizza2.jpg);
     background-size: cover;
-    padding: 200px;
+    padding: 100px;
     text-align: center;
 }
 h1 {
@@ -15,4 +15,18 @@ h2 {
     text-shadow: 5px 5px 7px black;
     font-size: 50px;
 
+}
+
+.menu {
+   text-shadow: blue;
+   padding: auto;
+
+   
+}
+
+p {
+    text-align: center;
+    text-transform: capitalize;
+    color: blue;
+    font-size: large;
 }
