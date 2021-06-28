@@ -12,10 +12,10 @@ $("form").submit(function(event) {
         alert("please enter your email correctly");
     }else if (message == "") {
         alert("please enter a message");
+    } else if (phoneNumber == "") {
+        alert("please enter a phonenumber");   
     }else {
-        alert("Hi " + name + "we have received your message.Thank you for reaching out to us.")
-    }}else if (location == "") {
-        alert("please enter a location");
-    }else if (phoneNumber == "") {
-        alert("please enter a number");
+        alert("Hi " + name + "we have received your message.Thank you for shopping with us.")
+    }
+    
 });
