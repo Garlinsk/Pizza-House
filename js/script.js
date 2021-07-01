@@ -70,9 +70,8 @@ $(document).ready(function() {
     $(".btn.check-out").click(function(event) {
         event.preventDefault();
     });
-    $("form#custom-pizza").submit(function(event) {
+    $("card#custom-pizza").submit(function(event) {
         event.preventDefault();
-        var pizzaFlavour = $("select#pizzaFlavour").val();
         var pizzaSize = $("select#pizzaSize").val();
         var pizzaCrust = $("select#pizzaCrust").val();
         var pizzaTopping = $("select#pizzaTopping").val();
