@@ -28,9 +28,9 @@
                                     <label for="pizzaSize">Size</label><br>
                                     <select class="form-control" id="pizzaSize">
                                         <option value="choose"></option>
-                                        <option label="Large - ksh 2000" value="2000"></option>
-                                        <option label="Medium -ksh 1500" value="1500"></option>
-                                        <option label="Small -ksh 1000" value="1000"></option>
+                                        <option label="Large - ksh 2000" value="large"></option>
+                                        <option label="Medium -ksh 1500" value="medium"></option>
+                                        <option label="small -ksh 800" value="small"></option>  
                                     </select>
                                 </div>
                             </div>
@@ -40,11 +40,11 @@
                                 <label for="pizzaCrust">Crust</label><br>
                                 <select class="form-control" id="pizzaCrust">
                                     <option label="choose"></option>
-                                    <option label="Thin crust -ksh 700" value="700"></option>
-                                    <option label="Thick crust -ksh 600" value="600"></option>
-                                    <option label="Deep crust -ksh 500" value="500"></option>
-                                    <option label="Cheese -ksh 450" value="450"></option>
-                                    <option label="Stuffed crust -ksh 400" value="400"></option>
+                                    <option label="Thin crust -ksh 700" value="thin"></option>
+                                    <option label="Thick crust -ksh 600" value="thick"></option>
+                                    <option label="Stuffed crust -ksh 400" value="stuffed"></option>
+                                    <option label="Cripsy crust -ksh 500" value="cripsy"></option>
+                                    <option label="Cheese -ksh 450" value="cheese"></option>  
                                 </select>
                             </div>
                         </div>
@@ -54,10 +54,10 @@
                                 <label for="pizzaTopping">Meat</label><br>
                                 <select class="form-control" id="pizzaTopping">
                                     <option label="choose"></option>
-                                    <option label="Bacon -ksh.120" value="120"></option>
-                                    <option label="Beef -ksh.120" value="120"></option>
-                                    <option label="Sausages -ksh.100" value="100"></option>
-                                    <option label="Chicken -ksh.100" value="100"></option>
+                                    <option label="Bacon -ksh.120" value="bacon"></option>
+                                    <option label="Beef -ksh.120" value="beef"></option>
+                                    <option label="Sausages -ksh.100" value="sausages"></option>
+                                    <option label="Chicken -ksh.100" value="chicken"></option>
                                 </select>
                             </div>
                         </div>
@@ -66,10 +66,10 @@
                                 <label for="pizzaTopping">Veggies</label><br>
                                 <select class="form-control" id="pizzaTopping">
                                     <option label="choose"></option>
-                                    <option label="spinach -ksh.130" value="130"></option>
-                                    <option label="Tomatoes -ksh.100" value="100"></option>
-                                    <option label="Corriender -ksh.80" value="80"></option>
-                                    <option label="Onions -ksh.60" value="60"></option>
+                                    <option label="spinach -ksh.130" value="spinach"></option>
+                                    <option label="Tomatoes -ksh.100" value="tomatoes"></option>
+                                    <option label="Corriender -ksh.80" value="corriender"></option>
+                                    <option label="Onions -ksh.60" value="onions"></option>
                                 </select>
                             </div>
                         </div>
@@ -78,22 +78,10 @@
                                 <label for="pizzaTopping">Cheese</label><br>
                                 <select class="form-control" id="pizzaCheese">
                                     <option label="choose"></option>
-                                    <option label="Ricotta -ksh.130" value="130"></option>
-                                    <option label="Parmesam -ksh.100" value="100"></option>
-                                    <option label="Cheddar -ksh.80" value="80"></option>
-                                    <option label="Provolone -ksh.60" value="60"></option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div id="toppings">
-                                <label for="pizzaTopping">Cheese</label><br>
-                                <select class="form-control" id="pizzaCheese">
-                                    <option label="choose"></option>
-                                    <option label="Ricotta -ksh.130" value="130"></option>
-                                    <option label="Parmesam -ksh.100" value="100"></option>
-                                    <option label="Cheddar -ksh.80" value="80"></option>
-                                    <option label="Provolone -ksh.60" value="60"></option>
+                                    <option label="Ricotta -ksh.130" value="ricotta"></option>
+                                    <option label="Parmesam -ksh.100" value="parmesam"></option>
+                                    <option label="Cheddar -ksh.80" value="cheddar"></option>
+                                    <option label="Provolone -ksh.60" value="provolone"></option>
                                 </select>
                             </div>
                         </div>
@@ -102,7 +90,23 @@
                     <button class="btn btn-success mx-auto d-block submit" type="submit" id="submit2"
                         onclick="totalAmount();"><strong>Confirm order</strong></button>
                 </div>
+                <!-- displays the orders’ summary together -->
+            <div class="order-summary">
+                <div id="order-details">
+                    <div class="order-amount">
+                        <h3 class="page-header"><strong>Pizza-Order</strong></h3>
+                        <h4>Total Order: Ksh <span id="final-cost"></span></h4>
+                    </div>
+
+                </div>
             </div>
+            </div>
+            
+            <div class="col-sm-6" id="price-details">
+                <div class="cart-section">
+                    <h3 class="page-header"><strong>Cart</strong></h3>
+                    <h6>Total Order: Ksh <span id="final-cost"></span></h6>
+                </div>
         </div>
     </div>
     </div>
