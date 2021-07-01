@@ -2,7 +2,7 @@
 #### Pizza-House, 2021
 #### By Franklin Kuloba
 ## Description
-This a web application thats helps customers from any place around our region,who would like to order our pizzas and it gives him or her the price,size and the test of choice and finaly submit the details to us for delivery.
+This a web application thats helps customers from any place around our region,who would like to order pizzas depending on price,type and location for easy delivery.
 ## Setup/Installation Requirements
 * Easy to install on androids and pc
 * Download the app,after download click install and give it permission to access your location for easy delivery.
