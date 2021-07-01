@@ -5,72 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-    <title>Pizza-House</title>
+    <title>Document</title>
 </head>
+
 <body>
-    <div class="intro">
-        <h1>PIZZA HOUSE</h1>
-        <br>
-        <p>Welcome to Pizza house.</p>
-        <br><br>
-    </div>
-    <br><br>
-    <div class="menu">
-        <div class="MENU">
-            <h2>MENU</h2>
-            <div class="list">
-                <div class="col-md-3" style="position:relative;">
-                    <img src="./images/cripsy.jpg" alt="Cripsy" class="images one" length="800" width="1000">
-                    <p class="overlay">CRIPSY</p>
-                </div>
-                <div class="col-md-3" style="position: relative;">
-                    <img src="./images/stuffed.jpg" alt="stuffed" class="images two" length="800" width="1000">
-                    <p class="overlay">STUFFED</p>
-                </div>
-                <div class="col-md-3" style="position: relative;">
-                    <img src="./images/gluten-free.jpg" alt="gluten-free" class="images three" length="800" width="1000">
-                    <p class="overlay">GLUTEN-FREE</p>
-                </div>   
+    <div class="container-fluid">
+        <div class="cont">
+            <a href="index.html"><button type="submit" form="form1" value="Submit" id="btn2">Pizza Palace </button></a>
+            <div class="placeOrder">
+                <form>
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- A form for the pizza size -->
+                            <div class="form-group">
+                                <div id="size">
+                                    <label for="pizzaSize">Size</label>
+                                    <select class="browser-default custom-select" id="pizzaSize">
+                                        <option value="choose"></option>
+                                        <option label="Large - ksh 2000" value="2000"></option>
+                                        <option label="Medium -ksh 1500" value="1500"></option>
+                                        <option label="Small -ksh 1000" value="1000"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- A form for the pizza crust -->
+                        <div class="form-group">
+                            <div id="crust">
+                                <label for="pizzaCrust">Crust</label>
+                                <select class="browser-default custom-select" id="pizzaCrust">
+                                    <option label="choose"></option>
+                                    <option label="Thin crust -ksh 700" value="700"></option>
+                                    <option label="Thick crust -ksh 600" value="600"></option>
+                                    <option label="Deep crust -ksh 500" value="500"></option>
+                                    <option label="Cheese -ksh 450" value="450"></option>
+                                    <option label="Stuffed crust -ksh 400" value="400"></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
             </div>
-        <div class="services">
-            <h3>SERVICES</h3>
-            <p>We make deliveries ON time.</p>
-            <P>We offer discounts on our regular customers</P>
-            <img src="./images/cart.png" alt="">
         </div>
     </div>
-    <div class="contact">
-        <h3>CONTACT US HERE TO MAKE YOUR ORDERS</h3>
-        <form>
-            <div class="form-row">
-                <div class="row">
-                    <div class="col-md-6">
-                        <input id="name" name="name" type="text" placeholder="Name..."> 
-                    </div>
-                    <div class="col-md-6">
-                        <input id="email" name="email" type="text" placeholder="Email..."> 
-                    </div>
-                    <div class="col-md-6">
-                        <input id="location" name="location" type="text" placeholder="Location..."> 
-                    </div>
-                    <div class="col-md-6">
-                        <input id="phoneNumber" name="phoneNumber" type="number" placeholder="PhoneNumber..."> 
-                    </div>
-                </div>
-                <br>
-                <div class="col-md-6">
-                    <textarea type="text" name="message" id="message" cols="60" rows="8"placeholder="Write your message here..."></textarea> 
-                </div>   
-            </div>
-            <br>
-            <div class="submit">
-                <input type ="submit" id="submit" value="submit">
-            </div>
-        </form>
     </div>
 </body>
 
