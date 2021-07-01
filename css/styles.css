@@ -111,10 +111,38 @@ span {
     padding-left: 5%;
     padding-top: 5%;
     padding-bottom: 5%;
-    margin-right: 60%;
+    margin-right: 20%;
+
 }
 
 h3 {
     font-size: 50px;
+}
+
+.checkout-section {
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-right: 60%;
+
+}
+
+.main-delivery {
+    background-color: rgb(166, 174, 199);
+    color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 60px;
+    color: cornflowerblue;
 }
 

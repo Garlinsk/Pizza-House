@@ -91,15 +91,46 @@
                         onclick="totalAmount();"><strong>Confirm order</strong></button>
                 </div>
                 <!-- displays the orders’ summary together -->
-            <div class="order-summary">
-                <div id="order-details">
-                    <div class="order-amount">
-                        <h3 class="page-header"><strong>Pizza-Order</strong></h3>
-                        <h4>Total Order: Ksh <span id="final-cost"></span></h4>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <div class="order-summary">
+                                <div id="order-details">
+                                    <div class="order-amount">
+                                        <h3 class="page-header"><strong>Pizza-Order</strong></h3>
+                                        <h4>Total Order: Ksh <span id="final-cost"></span></h4>
+                                    </div>
+                
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
+                    <div class="col">
+                        <div class="form-group">
+                            <div class="checkout-section">
+                                <button type="btn" class="btn btn-success btn-lg" id="checkout-btn">Checkout</button>
+        
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-            </div>
+                <div class="main-delivery">
+                    <div class="location">
+                        <h2><strong>Delivery services</strong></h2>
+                        <form id="delivery">
+                            <label for="name">Enter your name</label>
+                            <input type="text" class="form-control" name=""  id="name" placeholder="enter name..."  required>
+                            <label for="location">Enter your location</label>
+                            <input type="text" class="form-control" name=""  id="location" placeholder="enter location..." required>
+                            <label for="phoneNumber">Enter your phone number</label>
+                            <input type="text" class="form-control" name=""  id="phoneNumber" placeholder="+2547xxxxxx"  required>
+                            <br>
+                            <button type="submit" class="btn btn-danger btn-lg" id="submit" >Submit</button>
+                        </form>
+                    </div>
+                </div>
+            
             </div>
             
             <div class="col-sm-6" id="price-details">
