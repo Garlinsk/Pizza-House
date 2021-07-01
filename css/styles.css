@@ -57,6 +57,7 @@ body {
         margin-left: 20%;
         font-size: 30px;
         margin-top: 5%;
+        
     }
     .home p {
         margin-left: 15%;
@@ -144,5 +145,11 @@ h2 {
     text-align: center;
     font-size: 60px;
     color: cornflowerblue;
+}
+
+
+h1 {
+    text-align: center;
+    color: rgb(40, 145, 26);
 }
 

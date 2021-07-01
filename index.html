@@ -7,134 +7,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="javascript/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
     <title>Pizza-House</title>
 
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="cont">
-
-        </div>
-            <div class="placeOrder">
-                <form>
-                    <div class="card" id="custom-pizza">
-                        <div class="card-body">
-                            <!-- A form for the pizza size -->
-                            <div class="form-group">
-                                <div id="size">
-                                    <label for="pizzaSize">Size</label><br>
-                                    <select class="form-control" id="pizzaSize">
-                                        <option value="choose"></option>
-                                        <option label="Large - ksh 2000" value="large"></option>
-                                        <option label="Medium -ksh 1500" value="medium"></option>
-                                        <option label="small -ksh 800" value="small"></option>  
-                                    </select>
-                                </div>
-                            </div>
-                            <!-- A form for the pizza crust -->
-                        <div class="form-group">
-                            <div id="crust">
-                                <label for="pizzaCrust">Crust</label><br>
-                                <select class="form-control" id="pizzaCrust">
-                                    <option label="choose"></option>
-                                    <option label="Thin crust -ksh 700" value="thin"></option>
-                                    <option label="Thick crust -ksh 600" value="thick"></option>
-                                    <option label="Stuffed crust -ksh 400" value="stuffed"></option>
-                                    <option label="Cripsy crust -ksh 500" value="cripsy"></option>
-                                    <option label="Cheese -ksh 450" value="cheese"></option>  
-                                </select>
-                            </div>
-                        </div>
-                        <!-- A form for the pizza topping -->
-                        <div class=" form-group">
-                            <div id="toppings">
-                                <label for="pizzaTopping">Meat</label><br>
-                                <select class="form-control" id="pizzaTopping">
-                                    <option label="choose"></option>
-                                    <option label="Bacon -ksh.120" value="bacon"></option>
-                                    <option label="Beef -ksh.120" value="beef"></option>
-                                    <option label="Sausages -ksh.100" value="sausages"></option>
-                                    <option label="Chicken -ksh.100" value="chicken"></option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div id="toppings">
-                                <label for="pizzaTopping">Veggies</label><br>
-                                <select class="form-control" id="pizzaTopping">
-                                    <option label="choose"></option>
-                                    <option label="spinach -ksh.130" value="spinach"></option>
-                                    <option label="Tomatoes -ksh.100" value="tomatoes"></option>
-                                    <option label="Corriender -ksh.80" value="corriender"></option>
-                                    <option label="Onions -ksh.60" value="onions"></option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div id="toppings">
-                                <label for="pizzaTopping">Cheese</label><br>
-                                <select class="form-control" id="pizzaCheese">
-                                    <option label="choose"></option>
-                                    <option label="Ricotta -ksh.130" value="ricotta"></option>
-                                    <option label="Parmesam -ksh.100" value="parmesam"></option>
-                                    <option label="Cheddar -ksh.80" value="cheddar"></option>
-                                    <option label="Provolone -ksh.60" value="provolone"></option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- A submit button to confirm the order -->
-                    <button class="btn btn-success mx-auto d-block submit" type="submit" id="submit2"><strong>Confirm order</strong></button>
-                </div>
-                <!-- displays the orders’ summary together -->
-                <div class="row">
-                    <div class="col">
-                        <div class="form-group">
-                            <div class="order-summary">
-                                <div id="price-details">
-                                    <div class="cart-section">
-                                        <h3 class="page-header"><strong>Pizza-Order</strong></h3>
-                                        <h4>Total Order: Ksh <span id="final-cost"></span></h4>
-                                    </div>
-                
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-group">
-                            <div class="checkout-section">
-                                <button type="btn" class="btn btn-success btn-lg" id="checkout-btn">Checkout</button>
-                            </div>
-                            <div id="order-details">
-                                <h3><strong>Order summary</strong></h3>
-                                <ul id="pizza-details"><strong>Your pizza order :</strong></ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                
-                <div class="main-delivery">
-                    <div class="location">
-                        <h2><strong>Delivery services</strong></h2>
-                        <form id="delivery">
-                            <label for="name">Enter your name</label>
-                            <input type="text" class="form-control" name=""  id="name" placeholder="enter name..."  required>
-                            <label for="location">Enter your location</label>
-                            <input type="text" class="form-control" name=""  id="location" placeholder="enter location..." required>
-                            <label for="phoneNumber">Enter your phone number</label>
-                            <input type="text" class="form-control" name=""  id="phoneNumber" placeholder="+2547xxxxxx"  required>
-                            <br>
-                            <button type="submit" class="btn btn-danger btn-lg" id="submit" >Submit</button>
-                        </form>
-                    </div>
+    <section>
+        <header>
+            <h1>PIZZA-HOUSE</h1>
+        </header>
+    </section>
+    <div class="placeOrder">
+        <form class="form-group" id="custom-pizza">
+            <div class="form-group">
+                <div id="size">
+                    <label for="pizzaSize">Size</label><br>
+                    <select class="form-control" id="pizzaSize">
+                        <option value="choose"></option>
+                        <option label="Large - ksh 2000" value="large"></option>
+                        <option label="Medium -ksh 1500" value="medium"></option>
+                        <option label="small -ksh 800" value="small"></option>
+                    </select>
                 </div>
             </div>
+            <!-- A form for the pizza crust -->
+            <div class="form-group">
+                <div id="crust">
+                    <label for="pizzaCrust">Crust</label><br>
+                    <select class="form-control" id="pizzaCrust">
+                        <option label="choose"></option>
+                        <option label="Thin crust -ksh 700" value="thin"></option>
+                        <option label="Thick crust -ksh 600" value="thick"></option>
+                        <option label="Stuffed crust -ksh 400" value="stuffed"></option>
+                        <option label="Cripsy crust -ksh 500" value="cripsy"></option>
+                        <option label="Cheese -ksh 450" value="cheese"></option>
+                    </select>
+                </div>
+            </div>
+            <!-- A form for the pizza topping -->
+            <div class=" form-group">
+                <div id="toppings">
+                    <label for="pizzaTopping">Meat</label><br>
+                    <select class="form-control" id="pizzaMeat">
+                        <option label="choose"></option>
+                        <option label="Bacon -ksh.120" value="bacon"></option>
+                        <option label="Beef -ksh.120" value="beef"></option>
+                        <option label="Sausages -ksh.100" value="sausages"></option>
+                        <option label="Chicken -ksh.100" value="chicken"></option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div id="number">
+                    <label for="quantity">Quantity</label>
+                    <input class="form-control" type="number" name="pizza" id="amount" placeholder="Number of pizzas">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" id="submit-pizza">confirm Order</button>
+        </form>
+        <!-- displays the orders’ summary together -->
+        <div class="col-sm-6" id="price-details">
+            <div class="cart-section">
+                <h3 class="page-header"><strong>Cart</strong></h3>
+                <h6>Total Order: Ksh <span id="final-cost"></span></h6>
+            </div>
+            <div class="checkout-section">
+                <button type="btn" class="btn btn-dark" id="checkout-btn">Checkout</button>
+            </div>
+            <div id="order-details" class="col-xs-12">
+                <h3><strong>Order summary</strong></h3>
+                <ul id="pizza-details"><strong>Your order is:</strong></ul>
+            </div>
         </div>
+        <div id="home-delivery">
+            <div class="d-block mx-auto text-center">
+                <button  class="btn btn-primary btn-lg" id="delivery">Home Delivery?</button>
+            </div>
+        </div>
+        <div class="main-delivery">
+            <div class="location">
+                <h2><strong>Delivery services</strong></h2>
+                <form id="delivery">
+                    <label for="name">Enter your name</label>
+                    <input type="text" class="form-control" name="" id="name" placeholder="enter name..." required>
+                    <label for="location">Enter your location</label>
+                    <input type="text" class="form-control" name="" id="location" placeholder="enter location..."
+                        required>
+                    <label for="phoneNumber">Enter your phone number</label>
+                    <input type="text" class="form-control" name="" id="phoneNumber" placeholder="+2547xxxxxx" required>
+                    <br>
+                    <button type="submit" class="btn btn-danger btn-lg" id="submit1">Submit></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
     </div>
 </body>
 

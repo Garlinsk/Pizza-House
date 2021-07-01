@@ -41,24 +41,6 @@ $(document).ready(function() {
         } else if (this.pizzaTopping === "chicken") {
             this.pizzaPrice += 100;
         }
-        if (this.pizzaTopping === "spinach") {
-            this.pizzaPrice += 130;
-        } else if (this.pizzaTopping === "tomatoes") {
-            this.pizzaPrice += 100;
-        } else if (this.pizzaTopping === "corriender") {
-            this.pizzaPrice += 80;
-        } else if (this.pizzaTopping === "onions") {
-            this.pizzaPrice += 60;
-        }
-        if (this.pizzaTopping === "ricotta") {
-            this.pizzaPrice += 130;
-        } else if (this.pizzaTopping === "pclass=") {
-            this.pizzaPrice += 100;
-        } else if (this.pizzaTopping === "cheddar") {
-            this.pizzaPrice += 80;
-        } else if (this.pizzaTopping === "provolone") {
-            this.pizzaPrice += 60;
-        }
     };
     Order.prototype.finalCost = function() {
         var cartTotalPrice = [];
@@ -70,7 +52,7 @@ $(document).ready(function() {
     $(".btn.check-out").click(function(event) {
         event.preventDefault();
     });
-    $("card#custom-pizza").submit(function(event) {
+    $("form#custom-pizza").submit(function(event) {
         event.preventDefault();
         var pizzaSize = $("select#pizzaSize").val();
         var pizzaCrust = $("select#pizzaCrust").val();
@@ -92,10 +74,10 @@ $(document).ready(function() {
         $(".main-delivery").show();
     });
 
-    $(".main-delivery").submit(function() {
+    $(".main-delivery").submit1(function() {
         var name = $("input#name").val();
         var phoneNumber = $("input#phoneNumber").val();
         var location = $("input#location").val();
-        alert("Hello " +  name + ". Your order has been successfully received. It will be processed and delivered to " + location + " within one hour of placing.  Your delivery fee is ksh.250 .   Thank you for chosing our pizza inn.");
+        alert("Hello " +  name + ". Your order has been successfully received. It will be processed and delivered to " + location + " within one hour of placing.  Your delivery fee is ksh.250 .   Thank you for chosing our pizza-house.");
     });
 });
