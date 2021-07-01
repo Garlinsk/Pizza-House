@@ -1,7 +1,7 @@
 // / Business logic
 $(document).ready(function() {
-    // $("#order-details").hide();
-    $(".delivery-section").hide();
+    $("#order-details").hide();
+    $(".main-delivery").hide();
     $("#home-delivery").hide();
 
     var totalPriceArray = [];
@@ -52,7 +52,7 @@ $(document).ready(function() {
         }
         if (this.pizzaTopping === "ricotta") {
             this.pizzaPrice += 130;
-        } else if (this.pizzaTopping === "parmesam") {
+        } else if (this.pizzaTopping === "pclass=") {
             this.pizzaPrice += 100;
         } else if (this.pizzaTopping === "cheddar") {
             this.pizzaPrice += 80;
@@ -75,8 +75,8 @@ $(document).ready(function() {
         var pizzaSize = $("select#pizzaSize").val();
         var pizzaCrust = $("select#pizzaCrust").val();
         var pizzaTopping = $("select#pizzaTopping").val();
-        var pizzaDetails = (pizzaFlavour + " - " + pizzaSize + " - " + pizzaCrust + " - " + pizzaTopping);
-        var newPizzaOrder = new Order(pizzaFlavour,pizzaSize, pizzaCrust, pizzaTopping);
+        var pizzaDetails = (pizzaSize + " - " + pizzaCrust + " - " + pizzaTopping);
+        var newPizzaOrder = new Order(pizzaSize, pizzaCrust, pizzaTopping);
         newPizzaOrder.pizzaCost();
         totalPriceArray.push(newPizzaOrder.pizzaPrice);
         $("#final-cost").text(newPizzaOrder.finalCost());
@@ -89,15 +89,10 @@ $(document).ready(function() {
     });
     $("#delivery").click(function(){
         $("#delivery").hide();
-        $("#pick-up").hide();
-        $(".delivery-section").show();
+        $(".main-delivery").show();
     });
-    $("#pick-up").click(function(){
-        $("#delivery").hide();
-        $("#pick-up").hide();
-        $(".pick-up").slideDown(1000);
-    });
-    $(".delivery-section").submit(function() {
+
+    $(".main-delivery").submit(function() {
         var name = $("input#name").val();
         var phoneNumber = $("input#phoneNumber").val();
         var location = $("input#location").val();
