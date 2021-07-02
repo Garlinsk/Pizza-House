@@ -55,6 +55,7 @@ $(document).ready(function() {
     $("form#custom-pizza").submit(function(event) {
         event.preventDefault();
         var pizzaSize = $("select#pizzaSize").val();
+        console.log(pizzaSize);
         var pizzaCrust = $("select#pizzaCrust").val();
         var pizzaTopping = $("select#pizzaTopping").val();
         var pizzaDetails = (pizzaSize + " - " + pizzaCrust + " - " + pizzaTopping);
@@ -74,10 +75,11 @@ $(document).ready(function() {
         $(".main-delivery").show();
     });
 
-    $(".main-delivery").submit1(function() {
+    $("#submit1")(function() {
         var name = $("input#name").val();
         var phoneNumber = $("input#phoneNumber").val();
         var location = $("input#location").val();
         alert("Hello " +  name + ". Your order has been successfully received. It will be processed and delivered to " + location + " within one hour of placing.  Your delivery fee is ksh.250 .   Thank you for chosing our pizza-house.");
     });
+
 });
