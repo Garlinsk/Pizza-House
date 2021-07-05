@@ -1,8 +1,8 @@
 // / Business logic
 $(document).ready(function() {
-    $("#order-details").hide();
-    $(".main-delivery").hide();
-    $("#home-delivery").hide();
+    $("#order-details").show();
+    $(".main-delivery").show();
+    $("#home-delivery").show();
 
     var totalPriceArray = [];
     function Order(pizzaSize, pizzaCrust, pizzaTopping, amount) {
@@ -45,7 +45,7 @@ $(document).ready(function() {
     Order.prototype.finalCost = function() {
         var cartTotalPrice = [];
         for (var arrayElement = 0; arrayElement < totalPriceArray.length; arrayElement++) {
-            cartTotalPrice += totalPriceArray[arrayElement];
+            cartTotalPrice = totalPriceArray[arrayElement];
         }
         return cartTotalPrice;
     };
